@@ -33,4 +33,9 @@ var callback = function(response) {
   });
 }
 
+var options = {
+  host: 'stream-large-file.herokuapp.com',
+  path: '/give-me-stuff-now'
+};
+
 https.request(options, callback).end();
